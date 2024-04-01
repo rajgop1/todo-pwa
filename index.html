@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./script.js"></script>
+    <link rel="manifest" href="./manifest.json"/>
+    <meta name="theme-color" content="#db4938" />
+  </head>
+  <body>
+    <main>
+      <h1>Todo App</h1>
+      <hr />
+      <section>
+        <h2>Add Todo</h2>
+        <form>
+          <input
+            id="todo-input"
+            type="text"
+            placeholder="Enter Todo Value..."
+            aria-label="Enter a Todo"
+          />
+          <button aria-label="Add Todo" type="button" id="add-button">
+            Add
+          </button>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2>All Todo</h2>
+        <section>
+          <h3>Completed: <span id="completed-span"></span></h3>
+          <h3>Remaining: <span id="remaining-span"></span></h3>
+          <h3>All: <span id="all-span"></span></h3>
+        </section>
+        <ul id="todo-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>
